@@ -1,0 +1,28 @@
+PODS:
+  - NVActivityIndicatorView (4.5.0):
+    - NVActivityIndicatorView/Presenter (= 4.5.0)
+  - NVActivityIndicatorView/Presenter (4.5.0)
+  - Realm (5.3.5):
+    - Realm/Headers (= 5.3.5)
+  - Realm/Headers (5.3.5)
+  - RealmSwift (5.3.5):
+    - Realm (= 5.3.5)
+
+DEPENDENCIES:
+  - NVActivityIndicatorView (= 4.5.0)
+  - RealmSwift
+
+SPEC REPOS:
+  trunk:
+    - NVActivityIndicatorView
+    - Realm
+    - RealmSwift
+
+SPEC CHECKSUMS:
+  NVActivityIndicatorView: 1e4e3ed79248cf1666af182593c3a2acf0fcf193
+  Realm: 2b52fcc86fc0ed3d75a56ac0eb1e73c4f1a60e16
+  RealmSwift: a6ea2ea561039fc3833c08dec81371a9a3bb5ca6
+
+PODFILE CHECKSUM: d640bcf84030a1de706e0aff0d94e9c9540efdfc
+
+COCOAPODS: 1.9.1
