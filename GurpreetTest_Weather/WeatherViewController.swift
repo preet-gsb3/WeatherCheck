@@ -13,30 +13,21 @@ class WeatherViewController: UIViewController {
 
     @IBOutlet weak var lblInfo: UILabel!
     
-    var coordinates: CLLocationCoordinate2D!
-    var weatherData: WeatherResponseModel!
+    var timestampKey  = String()
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        if let arrWeather = weatherData.weather {
-            if let dataAtIndex = arrWeather.first {
-                let main = dataAtIndex.main ?? ""
-                let desc = dataAtIndex.weatherDescription ?? ""
-                
-                if let mainData = weatherData.main {
-                    
-                    let temp = "\(mainData.temp ?? 0)"
-                    let mintemp = "\(mainData.tempMin ?? 0)"
-                    let maxtemp = "\(mainData.tempMax ?? 0)"
-                    let humidity = "\(mainData.humidity ?? 0)"
-
-                    lblInfo.text = "\(main) - \(desc)\n\nTemp: \(temp)\nMin Temp: \(mintemp)\nMax Temp: \(maxtemp)\n Humidity: \(humidity)"
-                }
-                
+        let objDatabase = uiRealm.objects(LocationRealmModel.self).filter({$0.created == self.timestampKey})
+        if let dataAtIndex = objDatabase.first {
+            
+            var placeName = ""
+            if !dataAtIndex.name.isEmpty {
+                placeName = dataAtIndex.name + "\n\n"
             }
+            
+            self.lblInfo.text = placeName + dataAtIndex.weatherData
         }
-        
     }
     
     @IBAction func btnBack(_ sender: UIButton) {

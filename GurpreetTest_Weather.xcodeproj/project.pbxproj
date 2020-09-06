@@ -14,6 +14,7 @@
 		934B7DF32504FE5500C00ADA /* HudManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 934B7DF22504FE5500C00ADA /* HudManager.swift */; };
 		934B7DF52504FF5800C00ADA /* LocationRealmModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 934B7DF42504FF5800C00ADA /* LocationRealmModel.swift */; };
 		934B7DF7250503BB00C00ADA /* WeatherViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 934B7DF6250503BB00C00ADA /* WeatherViewController.swift */; };
+		934B7DF925050B5000C00ADA /* RealmManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 934B7DF825050B5000C00ADA /* RealmManager.swift */; };
 		93E728DB2504E1DA00B3041C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93E728DA2504E1DA00B3041C /* AppDelegate.swift */; };
 		93E728DD2504E1DA00B3041C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93E728DC2504E1DA00B3041C /* SceneDelegate.swift */; };
 		93E728DF2504E1DA00B3041C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93E728DE2504E1DA00B3041C /* ViewController.swift */; };
@@ -33,6 +34,7 @@
 		934B7DF22504FE5500C00ADA /* HudManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HudManager.swift; sourceTree = "<group>"; };
 		934B7DF42504FF5800C00ADA /* LocationRealmModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationRealmModel.swift; sourceTree = "<group>"; };
 		934B7DF6250503BB00C00ADA /* WeatherViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherViewController.swift; sourceTree = "<group>"; };
+		934B7DF825050B5000C00ADA /* RealmManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RealmManager.swift; sourceTree = "<group>"; };
 		93E728D72504E1DA00B3041C /* GurpreetTest_Weather.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GurpreetTest_Weather.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		93E728DA2504E1DA00B3041C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		93E728DC2504E1DA00B3041C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -121,6 +123,7 @@
 				93E728F32504EA9200B3041C /* AlertManager.swift */,
 				934B7DF22504FE5500C00ADA /* HudManager.swift */,
 				934B7DEB2504FC9100C00ADA /* ApiCall.swift */,
+				934B7DF825050B5000C00ADA /* RealmManager.swift */,
 				934B7DED2504FCF800C00ADA /* Extensions.swift */,
 			);
 			path = Managers;
@@ -249,6 +252,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				934B7DF925050B5000C00ADA /* RealmManager.swift in Sources */,
 				93E728EF2504E38700B3041C /* LocationManager.swift in Sources */,
 				934B7DF7250503BB00C00ADA /* WeatherViewController.swift in Sources */,
 				934B7DF52504FF5800C00ADA /* LocationRealmModel.swift in Sources */,
